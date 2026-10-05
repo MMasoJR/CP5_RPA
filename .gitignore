@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*secrets*
+*credentials*
+*.log
+*.db-wal
+*.db-shm
+*.db-journal
