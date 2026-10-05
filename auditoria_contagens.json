@@ -1,0 +1,40 @@
+{
+  "manifestacoes_rotuladas": 40,
+  "pii_total": 28,
+  "pii_totalmente_removidas": 28,
+  "caracteres_nao_pii": 2868,
+  "caracteres_nao_pii_preservados": 2868,
+  "por_tipo": {
+    "NOME": {
+      "total": 12,
+      "removidas": 12
+    },
+    "CPF": {
+      "total": 4,
+      "removidas": 4
+    },
+    "CONTA": {
+      "total": 4,
+      "removidas": 4
+    },
+    "AGENCIA": {
+      "total": 2,
+      "removidas": 2
+    },
+    "EMAIL": {
+      "total": 3,
+      "removidas": 3
+    },
+    "RG": {
+      "total": 3,
+      "removidas": 3
+    }
+  },
+  "modelo": "core_news_sm",
+  "versao_modelo": "3.8.0",
+  "erros_no_csv_publico": 0,
+  "holdout_recall": 1.0,
+  "holdout_pii_total": 20,
+  "holdout_erros": 3,
+  "versao_spacy": "3.8.16"
+}

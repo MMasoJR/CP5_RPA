@@ -1,0 +1,21 @@
+{
+  "recall_estimado": 1.0,
+  "precisao_estimado": 1.0,
+  "casos_de_erro": [
+    {
+      "id": "holdout-2",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[texto fora do CSV] 'Olá' removido como NOME em: 'Olá, sou Roberto Almeida e quero cancelar o cartão.'"
+    },
+    {
+      "id": "holdout-18",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[texto fora do CSV] 'Premium' removido como NOME em: 'Cliente Premium reclama da taxa de anuidade.'"
+    },
+    {
+      "id": "holdout-19",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[texto fora do CSV] 'Ligar' removido como NOME em: 'Ligar para Joana Dark no número cadastrado.'"
+    }
+  ]
+}

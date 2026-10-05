@@ -1,0 +1,632 @@
+[
+  {
+    "id": "1",
+    "antes": "Fui cobrado duas vezes na fatura deste mes, o valor total ja saiu da minha conta.",
+    "depois": "Fui cobrado duas vezes na fatura deste mes, o valor total ja saiu da minha conta.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "2",
+    "antes": "Gostaria de saber como altero meu endereco de cadastro no aplicativo.",
+    "depois": "Gostaria de saber como altero meu endereco de cadastro no aplicativo.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "3",
+    "antes": "Meu nome e Carlos Eduardo Ferreira e identifiquei uma transacao que nao reconheco no meu extrato de hoje.",
+    "depois": "Meu nome e [NOME] e identifiquei uma transacao que nao reconheco no meu extrato de hoje.",
+    "spans_esperados": [
+      {
+        "inicio": 11,
+        "fim": 34,
+        "tipo": "NOME",
+        "trecho": "Carlos Eduardo Ferreira"
+      }
+    ],
+    "spans_preditos": [
+      [
+        11,
+        34,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "4",
+    "antes": "O atendimento da agencia foi otimo, o gerente Bruno Salviano resolveu tudo rapido.",
+    "depois": "O atendimento da agencia foi otimo, o gerente [NOME] resolveu tudo rapido.",
+    "spans_esperados": [
+      {
+        "inicio": 46,
+        "fim": 60,
+        "tipo": "NOME",
+        "trecho": "Bruno Salviano"
+      }
+    ],
+    "spans_preditos": [
+      [
+        46,
+        60,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "5",
+    "antes": "Recebi uma mensagem estranha pedindo meus dados bancarios, acho que e uma fraude. Meu CPF e 123.456.789-00.",
+    "depois": "Recebi uma mensagem estranha pedindo meus dados bancarios, acho que e uma fraude. Meu CPF e [CPF].",
+    "spans_esperados": [
+      {
+        "inicio": 92,
+        "fim": 106,
+        "tipo": "CPF",
+        "trecho": "123.456.789-00"
+      }
+    ],
+    "spans_preditos": [
+      [
+        92,
+        106,
+        "CPF"
+      ]
+    ]
+  },
+  {
+    "id": "6",
+    "antes": "Quando sai a nova atualizacao do aplicativo?",
+    "depois": "Quando sai a nova atualizacao do aplicativo?",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "7",
+    "antes": "Meu cartao foi clonado e ja aparecem compras que nao fiz. Sou a cliente Fernanda Albuquerque, CPF 98765432100.",
+    "depois": "Meu cartao foi clonado e ja aparecem compras que nao fiz. Sou a cliente [NOME], CPF [CPF].",
+    "spans_esperados": [
+      {
+        "inicio": 72,
+        "fim": 92,
+        "tipo": "NOME",
+        "trecho": "Fernanda Albuquerque"
+      },
+      {
+        "inicio": 98,
+        "fim": 109,
+        "tipo": "CPF",
+        "trecho": "98765432100"
+      }
+    ],
+    "spans_preditos": [
+      [
+        72,
+        92,
+        "NOME"
+      ],
+      [
+        98,
+        109,
+        "CPF"
+      ]
+    ]
+  },
+  {
+    "id": "8",
+    "antes": "Queria elogiar a rapidez na abertura da minha conta digital, atendente Julia Prado foi excelente.",
+    "depois": "Queria elogiar a rapidez na abertura da minha conta digital, atendente [NOME] foi excelente.",
+    "spans_esperados": [
+      {
+        "inicio": 71,
+        "fim": 82,
+        "tipo": "NOME",
+        "trecho": "Julia Prado"
+      }
+    ],
+    "spans_preditos": [
+      [
+        71,
+        82,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "9",
+    "antes": "Nao concordo com a taxa de manutencao cobrada este mes, parece um valor errado.",
+    "depois": "Nao concordo com a taxa de manutencao cobrada este mes, parece um valor errado.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "10",
+    "antes": "Como funciona o programa de pontos do cartao de credito?",
+    "depois": "Como funciona o programa de pontos do cartao de credito?",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "11",
+    "antes": "Estou tentando falar com o suporte ha tres dias sobre um saque que nao caiu na minha conta 45231-9, agencia 0021.",
+    "depois": "Estou tentando falar com o suporte ha tres dias sobre um saque que nao caiu na minha conta [CONTA], agencia [AGENCIA].",
+    "spans_esperados": [
+      {
+        "inicio": 91,
+        "fim": 98,
+        "tipo": "CONTA",
+        "trecho": "45231-9"
+      },
+      {
+        "inicio": 108,
+        "fim": 112,
+        "tipo": "AGENCIA",
+        "trecho": "0021"
+      }
+    ],
+    "spans_preditos": [
+      [
+        91,
+        98,
+        "CONTA"
+      ],
+      [
+        108,
+        112,
+        "AGENCIA"
+      ]
+    ]
+  },
+  {
+    "id": "12",
+    "antes": "Achei a interface do novo aplicativo bem mais facil de usar.",
+    "depois": "Achei a interface do novo aplicativo bem mais facil de usar.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "13",
+    "antes": "Preciso de uma segunda via do meu cartao, o antigo venceu. Meu nome completo e Maria da Silva Nogueira.",
+    "depois": "Preciso de uma segunda via do meu cartao, o antigo venceu. Meu nome completo e [NOME].",
+    "spans_esperados": [
+      {
+        "inicio": 79,
+        "fim": 102,
+        "tipo": "NOME",
+        "trecho": "Maria da Silva Nogueira"
+      }
+    ],
+    "spans_preditos": [
+      [
+        79,
+        102,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "14",
+    "antes": "Foi descontado um valor de seguro que eu nunca contratei. Pode confirmar pelo meu e-mail joao.pereira@gmail.com?",
+    "depois": "Foi descontado um valor de seguro que eu nunca contratei. Pode confirmar pelo meu e-mail [EMAIL]?",
+    "spans_esperados": [
+      {
+        "inicio": 89,
+        "fim": 111,
+        "tipo": "EMAIL",
+        "trecho": "joao.pereira@gmail.com"
+      }
+    ],
+    "spans_preditos": [
+      [
+        89,
+        111,
+        "EMAIL"
+      ]
+    ]
+  },
+  {
+    "id": "15",
+    "antes": "Muito obrigado pela agilidade na aprovacao do meu emprestimo.",
+    "depois": "Muito obrigado pela agilidade na aprovacao do meu emprestimo.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "16",
+    "antes": "Gostaria de saber o horario de funcionamento da agencia central.",
+    "depois": "Gostaria de saber o horario de funcionamento da agencia central.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "17",
+    "antes": "Minha senha parou de funcionar e nao consigo acessar minha conta ha dois dias. RG 34.567.890-1.",
+    "depois": "Minha senha parou de funcionar e nao consigo acessar minha conta ha dois dias. RG [RG].",
+    "spans_esperados": [
+      {
+        "inicio": 82,
+        "fim": 94,
+        "tipo": "RG",
+        "trecho": "34.567.890-1"
+      }
+    ],
+    "spans_preditos": [
+      [
+        82,
+        94,
+        "RG"
+      ]
+    ]
+  },
+  {
+    "id": "18",
+    "antes": "Recebi um boleto de cobranca de um servico que ja cancelei ha meses. Assinado, rafael tavares moreira.",
+    "depois": "Recebi um boleto de cobranca de um servico que ja cancelei ha meses. Assinado, [NOME].",
+    "spans_esperados": [
+      {
+        "inicio": 79,
+        "fim": 101,
+        "tipo": "NOME",
+        "trecho": "rafael tavares moreira"
+      }
+    ],
+    "spans_preditos": [
+      [
+        79,
+        101,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "19",
+    "antes": "O aplicativo trava toda vez que tento fazer um Pix acima de mil reais.",
+    "depois": "O aplicativo trava toda vez que tento fazer um Pix acima de mil reais.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "20",
+    "antes": "Adorei a nova funcao de investimentos automaticos, muito pratica.",
+    "depois": "Adorei a nova funcao de investimentos automaticos, muito pratica.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "21",
+    "antes": "Preciso atualizar meu numero de telefone cadastrado. Envie a confirmacao para ana_costa99@hotmail.com.",
+    "depois": "Preciso atualizar meu numero de telefone cadastrado. Envie a confirmacao para [EMAIL].",
+    "spans_esperados": [
+      {
+        "inicio": 78,
+        "fim": 101,
+        "tipo": "EMAIL",
+        "trecho": "ana_costa99@hotmail.com"
+      }
+    ],
+    "spans_preditos": [
+      [
+        78,
+        101,
+        "EMAIL"
+      ]
+    ]
+  },
+  {
+    "id": "22",
+    "antes": "Notei um saque em caixa eletronico em outra cidade que eu nunca visitei. Conta 778821-4.",
+    "depois": "Notei um saque em caixa eletronico em outra cidade que eu nunca visitei. Conta [CONTA].",
+    "spans_esperados": [
+      {
+        "inicio": 79,
+        "fim": 87,
+        "tipo": "CONTA",
+        "trecho": "778821-4"
+      }
+    ],
+    "spans_preditos": [
+      [
+        79,
+        87,
+        "CONTA"
+      ]
+    ]
+  },
+  {
+    "id": "23",
+    "antes": "A taxa de cambio aplicada na minha compra internacional ficou bem acima da taxa oficial do dia.",
+    "depois": "A taxa de cambio aplicada na minha compra internacional ficou bem acima da taxa oficial do dia.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "24",
+    "antes": "Queria elogiar o novo layout do extrato, ficou bem mais claro.",
+    "depois": "Queria elogiar o novo layout do extrato, ficou bem mais claro.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "25",
+    "antes": "Como faco para encerrar minha conta poupanca? Meu nome e Patricia Yumi Sakamoto.",
+    "depois": "Como faco para encerrar minha conta poupanca? Meu nome e [NOME].",
+    "spans_esperados": [
+      {
+        "inicio": 57,
+        "fim": 79,
+        "tipo": "NOME",
+        "trecho": "Patricia Yumi Sakamoto"
+      }
+    ],
+    "spans_preditos": [
+      [
+        57,
+        79,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "26",
+    "antes": "Estou muito insatisfeito com o tempo de espera no chat de atendimento.",
+    "depois": "Estou muito insatisfeito com o tempo de espera no chat de atendimento.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "27",
+    "antes": "Meu limite do cartao foi reduzido sem nenhum aviso previo. CPF 111.222.333-44, favor verificar.",
+    "depois": "Meu limite do cartao foi reduzido sem nenhum aviso previo. CPF [CPF], favor verificar.",
+    "spans_esperados": [
+      {
+        "inicio": 63,
+        "fim": 77,
+        "tipo": "CPF",
+        "trecho": "111.222.333-44"
+      }
+    ],
+    "spans_preditos": [
+      [
+        63,
+        77,
+        "CPF"
+      ]
+    ]
+  },
+  {
+    "id": "28",
+    "antes": "Excelente iniciativa o novo programa de cashback.",
+    "depois": "Excelente iniciativa o novo programa de cashback.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "29",
+    "antes": "Alguem usou meus dados para abrir um emprestimo que eu nao fiz. Meu RG e 501987654.",
+    "depois": "Alguem usou meus dados para abrir um emprestimo que eu nao fiz. Meu RG e [RG].",
+    "spans_esperados": [
+      {
+        "inicio": 73,
+        "fim": 82,
+        "tipo": "RG",
+        "trecho": "501987654"
+      }
+    ],
+    "spans_preditos": [
+      [
+        73,
+        82,
+        "RG"
+      ]
+    ]
+  },
+  {
+    "id": "30",
+    "antes": "Qual o valor minimo para abrir uma conta investimento?",
+    "depois": "Qual o valor minimo para abrir uma conta investimento?",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "31",
+    "antes": "Encaminho a reclamacao de pedro henrique de castro sobre a cobranca indevida no cartao final 4521.",
+    "depois": "Encaminho a reclamacao de [NOME] sobre a cobranca indevida no cartao final 4521.",
+    "spans_esperados": [
+      {
+        "inicio": 26,
+        "fim": 50,
+        "tipo": "NOME",
+        "trecho": "pedro henrique de castro"
+      }
+    ],
+    "spans_preditos": [
+      [
+        26,
+        50,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "32",
+    "antes": "Trabalho na agencia 1123, conta 998877-2, e gostaria de revisar meu extrato dos ultimos tres meses.",
+    "depois": "Trabalho na agencia [AGENCIA], conta [CONTA], e gostaria de revisar meu extrato dos ultimos tres meses.",
+    "spans_esperados": [
+      {
+        "inicio": 20,
+        "fim": 24,
+        "tipo": "AGENCIA",
+        "trecho": "1123"
+      },
+      {
+        "inicio": 32,
+        "fim": 40,
+        "tipo": "CONTA",
+        "trecho": "998877-2"
+      }
+    ],
+    "spans_preditos": [
+      [
+        20,
+        24,
+        "AGENCIA"
+      ],
+      [
+        32,
+        40,
+        "CONTA"
+      ]
+    ]
+  },
+  {
+    "id": "33",
+    "antes": "Solicito o cancelamento do seguro residencial vinculado a minha conta corrente.",
+    "depois": "Solicito o cancelamento do seguro residencial vinculado a minha conta corrente.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "34",
+    "antes": "Sou o cliente Thiago Bezerra Lins, meu email para contato e thiago.lins@empresa.com.br.",
+    "depois": "Sou o cliente [NOME], meu email para contato e [EMAIL].",
+    "spans_esperados": [
+      {
+        "inicio": 14,
+        "fim": 33,
+        "tipo": "NOME",
+        "trecho": "Thiago Bezerra Lins"
+      },
+      {
+        "inicio": 60,
+        "fim": 86,
+        "tipo": "EMAIL",
+        "trecho": "thiago.lins@empresa.com.br"
+      }
+    ],
+    "spans_preditos": [
+      [
+        14,
+        33,
+        "NOME"
+      ],
+      [
+        60,
+        86,
+        "EMAIL"
+      ]
+    ]
+  },
+  {
+    "id": "35",
+    "antes": "Nao recebi o cartao fisico que deveria ter chegado ha duas semanas.",
+    "depois": "Nao recebi o cartao fisico que deveria ter chegado ha duas semanas.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "36",
+    "antes": "A cliente Camila reportou instabilidade no aplicativo durante o Pix noturno.",
+    "depois": "A cliente [NOME] reportou instabilidade no aplicativo durante o Pix noturno.",
+    "spans_esperados": [
+      {
+        "inicio": 10,
+        "fim": 16,
+        "tipo": "NOME",
+        "trecho": "Camila"
+      }
+    ],
+    "spans_preditos": [
+      [
+        10,
+        16,
+        "NOME"
+      ]
+    ]
+  },
+  {
+    "id": "37",
+    "antes": "Segue print do erro. Att, gustavo lima araujo, CPF 22233344455.",
+    "depois": "Segue print do erro. Att, [NOME], CPF [CPF].",
+    "spans_esperados": [
+      {
+        "inicio": 26,
+        "fim": 45,
+        "tipo": "NOME",
+        "trecho": "gustavo lima araujo"
+      },
+      {
+        "inicio": 51,
+        "fim": 62,
+        "tipo": "CPF",
+        "trecho": "22233344455"
+      }
+    ],
+    "spans_preditos": [
+      [
+        26,
+        45,
+        "NOME"
+      ],
+      [
+        51,
+        62,
+        "CPF"
+      ]
+    ]
+  },
+  {
+    "id": "38",
+    "antes": "Gostaria de entender por que a fatura chegou com dois lancamentos duplicados.",
+    "depois": "Gostaria de entender por que a fatura chegou com dois lancamentos duplicados.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  },
+  {
+    "id": "39",
+    "antes": "Meu contrato de financiamento esta em nome de Beatriz Cristina Monteiro, RG 12345678, conta 33445-5.",
+    "depois": "Meu contrato de financiamento esta em nome de [NOME], RG [RG], conta [CONTA].",
+    "spans_esperados": [
+      {
+        "inicio": 46,
+        "fim": 71,
+        "tipo": "NOME",
+        "trecho": "Beatriz Cristina Monteiro"
+      },
+      {
+        "inicio": 76,
+        "fim": 84,
+        "tipo": "RG",
+        "trecho": "12345678"
+      },
+      {
+        "inicio": 92,
+        "fim": 99,
+        "tipo": "CONTA",
+        "trecho": "33445-5"
+      }
+    ],
+    "spans_preditos": [
+      [
+        46,
+        71,
+        "NOME"
+      ],
+      [
+        76,
+        84,
+        "RG"
+      ],
+      [
+        92,
+        99,
+        "CONTA"
+      ]
+    ]
+  },
+  {
+    "id": "40",
+    "antes": "Por favor me liguem no telefone cadastrado assim que possivel para tratar do estorno.",
+    "depois": "Por favor me liguem no telefone cadastrado assim que possivel para tratar do estorno.",
+    "spans_esperados": [],
+    "spans_preditos": []
+  }
+]
